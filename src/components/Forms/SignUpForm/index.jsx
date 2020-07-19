@@ -37,7 +37,7 @@ export default ({ onChange, onSubmit }) => {
                 <Items />
             </ItemsDiv>
 
-            <Button oulined>
+            <Button type="submit" oulined>
                 <span>FINISH</span>
             </Button>
         </Form>

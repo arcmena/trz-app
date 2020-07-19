@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { SignUpForm } from '../../components';
 import { Container, RightPainel } from './styles';
@@ -6,10 +6,23 @@ import { Container, RightPainel } from './styles';
 import Background from '../../assets/bmg.png';
 
 export default () => {
+    const [values, setValues] = useState({});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setValues({ ...values, [name]: value });
+        console.log(values);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(values);
+    };
+
     return (
         <Container>
             <section>
-                <SignUpForm />
+                <SignUpForm onChange={handleChange} onSubmit={handleSubmit} />
             </section>
 
             <RightPainel>
