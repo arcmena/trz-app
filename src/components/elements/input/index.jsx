@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container } from './styles';
 
-export default ({ size }) => {
+export default ({ type, size }) => {
     return (
         <Container>
-            <input type="text" size={size} />
+            <input type={type} />
         </Container>
     );
 };

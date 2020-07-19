@@ -2,13 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    height: max(100vh - 70px);
+    justify-content: center;
+
+    @media (max-width: 1070px) {
+        margin-top: 35px;
+    }
 
     section {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        /* @media (max-width: 575px) {
+            margin-top: max(15 vh + 100px);
+        } */
+    }
+
+    @media (max-width: 1070px) {
+        flex-direction: column;
     }
 `;
 
@@ -18,10 +29,12 @@ export const RightPainel = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    margin-right: 140px;
-
     img {
         height: 60%;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
     }
 
     h3 {

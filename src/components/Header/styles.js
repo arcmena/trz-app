@@ -28,6 +28,10 @@ export const Container = styled.div`
     }
 
     box-shadow: 0 50px 150px rgba(0, 0, 0, 0.23);
+
+    @media (max-width: 575px) {
+        width: 100vw;
+    }
 `;
 
 export const LogoDiv = styled.div`

@@ -13,7 +13,9 @@ export default createGlobalStyle`
 
     textarea:focus,
     input:focus,
-    button:focus {
+    button:focus,
+    select:focus,
+    option:focus {
         outline: none;
     }
     
