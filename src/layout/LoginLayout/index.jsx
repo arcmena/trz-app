@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, SignUp } from './styles';
 import { LoginForm } from '../../components';
@@ -21,7 +22,10 @@ export default () => {
             <section>
                 <LoginForm onChange={handleChange} onSubmit={handleSubmit} />
                 <SignUp>
-                    Isn’t a survivor yet? <span>Register now!</span>
+                    Isn’t a survivor yet?
+                    <Link to="/signup">
+                        <span> Register now!</span>
+                    </Link>
                 </SignUp>
             </section>
             <img src={Background} alt="background-zombies.png" />

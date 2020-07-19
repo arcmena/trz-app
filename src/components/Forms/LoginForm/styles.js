@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 import { VpnKey } from '../../../styles/Icons';
 
-export const Form = styled.form``;
-
 export const IdDiv = styled.div`
     display: flex;
     align-items: center;
