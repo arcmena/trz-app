@@ -8,6 +8,7 @@ export default () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={LoginLayout} />
+                {/* <Route exact path="/signup" component={LoginLayout} /> */}
             </Switch>
         </BrowserRouter>
     );

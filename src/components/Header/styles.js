@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     align-items: center;
+    z-index: 10;
+    position: relative;
 
     width: 100%;
     height: 70px;
