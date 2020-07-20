@@ -34,7 +34,7 @@ export default ({ onChange, onSubmit }) => {
 
             <ItemsDiv>
                 <span>Register belongings</span>
-                <Items />
+                <Items borderColor="rgba(48, 48, 48, 0.35)" borderTop />
             </ItemsDiv>
 
             <Button type="submit" oulined>

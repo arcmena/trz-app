@@ -27,16 +27,38 @@ export const Container = styled.div`
         }
     }
 
-    box-shadow: 0 50px 150px rgba(0, 0, 0, 0.23);
-
-    @media (max-width: 575px) {
-        width: 100vw;
-    }
-`;
-
-export const LogoDiv = styled.div`
     span {
         font-size: 20px;
         margin-right: 15px;
     }
+
+    box-shadow: 0 50px 120px rgba(0, 0, 0, 0.23);
 `;
+
+export const Dropdown = styled.div`
+    display: none;
+`;
+
+export const Icon = styled.div``;
+export const DropdownContent = styled.div``;
+
+export const Menu = styled.div`
+    margin-left: 25px;
+
+    li {
+        list-style: none;
+        float: right;
+
+        cursor: pointer;
+    }
+
+    li + li {
+        margin-left: 35px;
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+`;
+
+export const LogoDiv = styled.div``;

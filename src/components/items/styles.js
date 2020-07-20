@@ -3,24 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
 
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 130px;
-        height: 120px;
-
-        margin: 0;
-
-        border: 1px solid rgba(48, 48, 48, 0.35);
-
-        & + div {
-            margin-left: 1px;
-        }
-    }
-
     img {
         width: 55px;
         max-height: 55px;
@@ -32,5 +14,26 @@ export const Container = styled.div`
         margin-top: 5px;
 
         text-align: center;
+    }
+`;
+
+export const Square = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;
+    height: 120px;
+
+    margin: 0;
+
+    border-top: ${(props) =>
+        props.borderTop ? `1px solid ${props.borderColor}` : 'none'};
+    border-right: 1px solid ${(props) => props.borderColor};
+    border-bottom: 1px solid ${(props) => props.borderColor};
+
+    &:first-child {
+        border-left: 1px solid ${(props) => props.borderColor};
     }
 `;

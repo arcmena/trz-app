@@ -59,6 +59,8 @@ export const DivRow = styled.div`
     display: flex;
     justify-content: space-between;
 
+    width: 430px;
+
     div {
         width: 200px;
         margin-bottom: 10px;
@@ -81,14 +83,12 @@ export const DivRow = styled.div`
 
         font-family: 'Ubuntu';
         font-size: 20px;
-
-        option {
-            border: 2px solid rgba(48, 48, 48, 0.35);
-        }
     }
 
     @media (max-width: 430px) {
         flex-direction: column;
+
+        width: 320px;
 
         div {
             width: 320px;
