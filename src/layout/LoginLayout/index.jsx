@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Container, SignUp } from './styles';
 import { LoginForm } from '../../components';
 import Background from '../../assets/background-zombies.png';
 
+import { UserContext } from '../../config/contexts/UserContext';
+
 export default () => {
+    const { login } = useContext(UserContext);
     const [values, setValues] = useState({});
 
     const handleChange = (e) => {
@@ -15,6 +18,8 @@ export default () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        login();
     };
 
     return (

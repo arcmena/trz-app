@@ -30,7 +30,7 @@ export default () => {
                                 <span>REPORT INFECTED</span>
                             </li>
                         </DropdownContent>
-                    </Dropdown> */}
+                    </Dropdown>
 
                     <li>
                         <span>HOME</span>
@@ -40,7 +40,7 @@ export default () => {
                     </li>
                     <li>
                         <span>REPORT INFECTED</span>
-                    </li>
+                    </li> */}
                 </Menu>
             ) : (
                 <div></div>

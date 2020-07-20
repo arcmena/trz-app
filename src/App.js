@@ -5,13 +5,15 @@ import Routes from './routes';
 import { Header } from './components';
 import GlobalStyles from './styles/GlobalStyles';
 
+import UserProvider from './config/contexts/UserContext';
+
 function App() {
     return (
-        <div className="App">
+        <UserProvider>
             <Header />
             <Routes />
             <GlobalStyles />
-        </div>
+        </UserProvider>
     );
 }
 
