@@ -7,22 +7,34 @@ import Background from '../../assets/bmg.png';
 
 export default () => {
     const [values, setValues] = useState({});
+    const [items, setItems] = useState({});
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setValues({ ...values, [name]: value });
-        console.log(values);
+    };
+
+    const handleItems = (e) => {
+        const { name, value } = e.target;
+        // const item = {
+        //     [name]
+        // }
+        setItems({ ...items, [name]: value });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(values);
+        console.log({ values, items });
     };
 
     return (
         <Container>
             <section>
-                <SignUpForm onChange={handleChange} onSubmit={handleSubmit} />
+                <SignUpForm
+                    onChange={handleChange}
+                    onClick={handleSubmit}
+                    onChangeItems={handleItems}
+                />
             </section>
 
             <RightPainel>

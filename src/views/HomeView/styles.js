@@ -16,6 +16,13 @@ export const ReportsDiv = styled.div`
     @media (max-width: 1024px) {
         padding: 35px 0;
     }
+
+    label {
+        font-family: 'Ubuntu';
+        font-weight: lighter;
+        font-size: 19px;
+        margin-bottom: 5px;
+    }
 `;
 
 export const MapDiv = styled.div`

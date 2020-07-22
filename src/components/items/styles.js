@@ -32,8 +32,15 @@ export const Square = styled.div`
         props.borderTop ? `1px solid ${props.borderColor}` : 'none'};
     border-right: 1px solid ${(props) => props.borderColor};
     border-bottom: 1px solid ${(props) => props.borderColor};
+    border-left: ${(props) =>
+        props.vertical ? `1px solid ${props.borderColor}` : 'none'};
 
     &:first-child {
         border-left: 1px solid ${(props) => props.borderColor};
+        border-top: ${(props) => `1px solid ${props.borderColor}`};
+    }
+
+    input {
+        cursor: ${(props) => (props.readOnly ? 'default' : 'pointer')};
     }
 `;
