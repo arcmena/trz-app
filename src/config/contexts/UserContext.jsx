@@ -21,26 +21,24 @@ export default ({ children }) => {
         setUserData(null);
     };
 
-    const setData = ({ token, user }) => {
+    const setData = ({ token, user, inv }) => {
         localStorage.token = token;
-        setUserData(user);
+        setUserData({ user, inv });
         setLogged(true);
     };
 
-    const refreshData = () => {
-        if (logged) {
-            setLogged(true);
-        } else {
-            logoff();
-        }
-    };
+    // const refreshData = () => {
+    //     api.get('/refreshToken')
+    //         .then(({ data }) => setData(data))
+    //         .catch((error) => console.error(error));
+    // };
 
     const providerValue = {
         logged,
         login,
         logoff,
         userData,
-        refreshData,
+        // refreshData,
     };
 
     return (

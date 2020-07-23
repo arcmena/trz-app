@@ -76,7 +76,7 @@ export const Content = styled.div`
         font-weight: normal;
     }
 
-    div {
+    form {
         width: 250px;
         display: flex;
         align-items: center;

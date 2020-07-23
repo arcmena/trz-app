@@ -4,7 +4,7 @@ import { Container, Modal, Close, Title, Content } from './styles';
 
 import { Input, Button } from '../';
 
-export default ({ isOpen, close, onChange }) => {
+export default ({ isOpen, close, onChange, onSubmit }) => {
     return (
         <Container isOpen={isOpen}>
             <Modal>
@@ -21,15 +21,12 @@ export default ({ isOpen, close, onChange }) => {
                     <p>Saw another survivor that is turning into a zombie?</p>
                     <p>Report him on the field below: </p>
 
-                    <div>
-                        <Input
-                            placeholder="Survivor name"
-                            onChange={onChange}
-                        />
-                        <Button width="50px" height="50px">
+                    <form onChange={onChange} onSubmit={onSubmit}>
+                        <Input placeholder="Survivor name" />
+                        <Button type="submit" width="50px" height="50px">
                             <span>></span>
                         </Button>
-                    </div>
+                    </form>
                 </Content>
             </Modal>
         </Container>

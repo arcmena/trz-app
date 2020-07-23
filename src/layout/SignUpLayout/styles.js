@@ -13,9 +13,7 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
 
-        /* @media (max-width: 575px) {
-            margin-top: max(15 vh + 100px);
-        } */
+        margin: 0px 45px;
     }
 
     @media (max-width: 1070px) {

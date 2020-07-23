@@ -1,7 +1,11 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useContext, useState, useEffect } from 'react';
 
 import { Container, Square } from './styles';
+
 import { ak47, firstAid, soup, water } from '../../assets';
+
+import { UserContext } from '../../config/contexts/UserContext';
 
 export default ({
     readOnly,
@@ -10,7 +14,30 @@ export default ({
     vertical,
     onClick,
     id,
+    values,
 }) => {
+    //Didn't have time to implement the items on the inventories
+    const [inv, setInv] = useState(null);
+
+    const { valueOne, setValueOne } = useState(0);
+    const { valueTwo, setValueTwo } = useState(0);
+    const { valueThree, setValuerThree } = useState(0);
+    const { valueFour, setValueFour } = useState(0);
+
+    function separateValues(values) {
+        values.forEach(({ item_id, quantity }) => {
+            if (item_id === 1) {
+                setValueOne(quantity);
+            } else if (item_id === 2) {
+                setValueTwo(quantity);
+            } else if (item_id === 3) {
+                setValuerThree(quantity);
+            } else {
+                setValueFour(quantity);
+            }
+        });
+    }
+
     return (
         <Container>
             <Square
@@ -29,6 +56,7 @@ export default ({
                     name="1"
                     placeholder="0"
                     readOnly={readOnly}
+                    value={valueOne}
                 />
             </Square>
             <Square
@@ -47,6 +75,7 @@ export default ({
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}
+                    value={valueTwo}
                 />
             </Square>
             <Square
@@ -65,6 +94,7 @@ export default ({
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}
+                    value={valueThree}
                 />
             </Square>
             <Square
@@ -87,6 +117,7 @@ export default ({
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}
+                    value={valueFour}
                 />
             </Square>
         </Container>

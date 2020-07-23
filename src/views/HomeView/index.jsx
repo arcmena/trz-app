@@ -16,7 +16,7 @@ export default () => {
 
     const [values, setValues] = useState({});
 
-    const { userData, logged } = useContext(UserContext);
+    const { userData } = useContext(UserContext);
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition((position) => {
@@ -24,14 +24,18 @@ export default () => {
             setInitialLocation([latitude, longitude]);
         });
 
-        if (userData.lastlocation) {
-            const lc = userData.lastlocation.split(' ');
+        if (userData.user.lastLocation !== '') {
+            const lc = userData.user.lastlocation.split(' ');
             setLastLocation([lc[0], lc[1]]);
         } else {
             setMessage(
                 `Your first time here? Make sure to set your location on the map!`
             );
         }
+
+        console.log(userData);
+        console.log(userData.user.lastlocation);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleMapClick = (e) => {

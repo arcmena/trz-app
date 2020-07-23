@@ -14,12 +14,37 @@ export const Title = styled.div`
         font-family: 'PT Sans';
         font-size: 35px;
         color: #383838;
+        margin-top: 25px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     p {
         font-family: 'Ubuntu';
         font-size: 16px;
         color: gray;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-family: 'PT Sans';
+        font-size: 26px;
+        color: #303030;
+        border-bottom: 1px solid #55adbe;
+        margin-bottom: 15px;
+
+        cursor: pointer;
+
+        transition: font-size 0.2s;
+
+        &:hover {
+            font-size: 30px;
+        }
     }
 `;
 
@@ -77,7 +102,13 @@ export const TradeInfos = styled.div`
     }
 `;
 
-export const Price = styled.div``;
+export const Price = styled.div`
+    h4 {
+        font-family: 'Nunito Sans';
+        font-size: 15px;
+        margin-top: 8px;
+    }
+`;
 
 export const SelecItem = styled.div`
     display: flex;
@@ -104,10 +135,7 @@ export const Results = styled.div`
     flex-direction: column;
     align-items: center;
 
-    div {
-        width: 100px;
-        margin-bottom: 15px;
-    }
+    margin-bottom: 25px;
 
     input {
         width: 70px;
