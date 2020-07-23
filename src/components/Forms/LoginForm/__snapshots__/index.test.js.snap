@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginForm/> should render as expected 1`] = `
+<form
+  onChange={[MockFunction]}
+  onSubmit={[MockFunction]}
+>
+  <styled.div>
+    <input
+      name="accessKey"
+      placeholder="Identification"
+      type="text"
+    />
+    <Styled(VpnKey) />
+  </styled.div>
+  <styled.button
+    type="submit"
+  >
+    <span>
+      LOGIN
+    </span>
+  </styled.button>
+</form>
+`;

@@ -14,6 +14,10 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 export const Message = styled.div`

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input/> should render as expected 1`] = `
+<styled.div>
+  <input
+    id="button"
+    name="namedbutton"
+    placeholder="sometext"
+    readOnly={true}
+    type="text"
+    value="sometest"
+  />
+</styled.div>
+`;
