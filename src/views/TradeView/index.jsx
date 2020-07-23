@@ -191,8 +191,6 @@ export default () => {
         } else {
             setInfos(false);
         }
-
-        console.log(infos);
     };
 
     return (

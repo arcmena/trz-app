@@ -32,9 +32,6 @@ export default () => {
                 `Your first time here? Make sure to set your location on the map!`
             );
         }
-
-        console.log(userData);
-        console.log(userData.user.lastlocation);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 

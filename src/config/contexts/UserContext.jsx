@@ -6,7 +6,6 @@ export const UserContext = createContext();
 
 export default ({ children }) => {
     const [logged, setLogged] = useState(false);
-    // eslint-disable-next-line no-unused-vars
     const [userData, setUserData] = useState(null);
 
     const login = (values) => {
@@ -27,18 +26,11 @@ export default ({ children }) => {
         setLogged(true);
     };
 
-    // const refreshData = () => {
-    //     api.get('/refreshToken')
-    //         .then(({ data }) => setData(data))
-    //         .catch((error) => console.error(error));
-    // };
-
     const providerValue = {
         logged,
         login,
         logoff,
         userData,
-        // refreshData,
     };
 
     return (
