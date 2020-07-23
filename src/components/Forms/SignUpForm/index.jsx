@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Input, Button, Items } from '../../';
-import { Form, Name, Title, DivRow, ItemsDiv } from './styles';
+import { Form, Name, Title, DivRow, ItemsDiv, ButtonDiv } from './styles';
 
 export default ({ onChange, onClick, onChangeItems }) => {
     return (
@@ -18,8 +18,8 @@ export default ({ onChange, onClick, onChangeItems }) => {
 
                 <DivRow>
                     <div>
-                        <label htmlFor="age">Birth Date</label>
-                        <Input type="date" id="age" name="age" required />
+                        <label htmlFor="age">Age</label>
+                        <Input type="text" id="age" name="age" required />
                     </div>
                     <div>
                         <label htmlFor="gender">Gender</label>
@@ -38,9 +38,11 @@ export default ({ onChange, onClick, onChangeItems }) => {
                 <Items borderColor="rgba(48, 48, 48, 0.35)" borderTop />
             </ItemsDiv>
 
-            <Button type="submit" oulined onClick={onClick}>
-                <span>FINISH</span>
-            </Button>
+            <ButtonDiv>
+                <Button type="submit" oulined onClick={onClick}>
+                    <span>FINISH</span>
+                </Button>
+            </ButtonDiv>
         </div>
     );
 };

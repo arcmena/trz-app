@@ -66,7 +66,7 @@ export const DivRow = styled.div`
         margin-bottom: 10px;
 
         input {
-            width: 190px;
+            width: 170px;
         }
     }
 
@@ -107,7 +107,7 @@ export const ItemsDiv = styled.div`
     display: flex;
     flex-direction: column;
 
-    margin: 0 !important;
+    margin: 0 0 35px 0 !important;
 
     span {
         font-family: 'Ubuntu';
@@ -122,4 +122,10 @@ export const ItemsDiv = styled.div`
         flex-shrink: 0;
         flex-wrap: wrap;
     }
+`;
+
+export const ButtonDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;

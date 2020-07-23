@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { ExitToApp } from '../../styles/Icons';
+
 export const Container = styled.div`
     display: flex;
     align-items: center;
@@ -35,12 +37,10 @@ export const Container = styled.div`
     box-shadow: 0 50px 120px rgba(0, 0, 0, 0.23);
 `;
 
-export const Dropdown = styled.div`
-    display: none;
+export const Icon = styled(ExitToApp)`
+    width: 30px;
+    height: 30px;
 `;
-
-export const Icon = styled.div``;
-export const DropdownContent = styled.div``;
 
 export const Menu = styled.div`
     margin-left: 25px;
@@ -58,6 +58,11 @@ export const Menu = styled.div`
 
     @media (max-width: 600px) {
         display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
     }
 `;
 

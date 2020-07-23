@@ -7,7 +7,11 @@ export default ({ onChange, onSubmit }) => {
     return (
         <form onChange={onChange} onSubmit={onSubmit}>
             <IdDiv>
-                <input type="text" name="id" placeholder="Identification" />
+                <input
+                    type="text"
+                    name="accessKey"
+                    placeholder="Identification"
+                />
                 <KeyIcon />
             </IdDiv>
 

@@ -14,76 +14,76 @@ export default ({
     return (
         <Container>
             <Square
-                id={`${id} Weapon`}
+                id={`${id} Weapon 1`}
                 onClick={onClick}
                 borderColor={borderColor}
                 borderTop={borderTop}
                 vertical={vertical}
                 readOnly={readOnly}
             >
-                <label id={`${id} Weapon`}>Weapon</label>
-                <img id={`${id} Weapon`} src={ak47} alt="ak47.svg" />
+                <label id={`${id} Weapon 1`}>Weapon</label>
+                <img id={`${id} Weapon 1`} src={ak47} alt="ak47.svg" />
                 <input
                     type="text"
-                    id={`${id} Weapon`}
-                    name="Weapon"
+                    id={`${id} Weapon 1`}
+                    name="1"
                     placeholder="0"
                     readOnly={readOnly}
                 />
             </Square>
             <Square
-                id={`${id} Food`}
+                id={`${id} Food 2`}
                 onClick={onClick}
                 borderColor={borderColor}
                 borderTop={borderTop}
                 vertical={vertical}
                 readOnly
             >
-                <label id={`${id} Food`}>Food</label>
-                <img id={`${id} Food`} src={soup} alt="soup.svg" />
+                <label id={`${id} Food 2`}>Food</label>
+                <img id={`${id} Food 2`} src={soup} alt="soup.svg" />
                 <input
-                    id={`${id} Food`}
-                    name="Food"
+                    id={`${id} Food 2`}
+                    name="2"
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}
                 />
             </Square>
             <Square
-                id={`${id} Water`}
+                id={`${id} Water 3`}
                 onClick={onClick}
                 borderColor={borderColor}
                 borderTop={borderTop}
                 vertical={vertical}
                 readOnly
             >
-                <label id={`${id} Water`}>Water</label>
-                <img id={`${id} Water`} src={water} alt="water.svg" />
+                <label id={`${id} Water 3`}>Water</label>
+                <img id={`${id} Water 3`} src={water} alt="water.svg" />
                 <input
-                    id={`${id} Water`}
-                    name="Water"
+                    id={`${id} Water 3`}
+                    name="3"
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}
                 />
             </Square>
             <Square
-                id={`${id} Medic-Supplies`}
+                id={`${id} Medic-Supplies 4`}
                 onClick={onClick}
                 borderColor={borderColor}
                 borderTop={borderTop}
                 vertical={vertical}
                 readOnly
             >
-                <label id={`${id} Medic-Supplies`}>Medic Supp.</label>
+                <label id={`${id} Medic-Supplies 4`}>Medic Supp.</label>
                 <img
-                    id={`${id} Medic-Supplies`}
+                    id={`${id} Medic-Supplies 4`}
                     src={firstAid}
                     alt="firstAid.svg"
                 />
                 <input
-                    id={`${id} Medic-Supplies`}
-                    name="Medic-Supplies"
+                    id={`${id} Medic-Supplies 4`}
+                    name="4"
                     type="text"
                     placeholder="0"
                     readOnly={readOnly}

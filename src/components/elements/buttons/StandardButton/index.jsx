@@ -4,8 +4,8 @@ export default styled.button`
     background: ${(props) => (props.outlined ? 'transparent' : '#61c1d4')};
     border: ${(props) => (props.outlined ? '2px solid #61c1d4' : 'none')};
     border-radius: 15px;
-    width: 320px;
-    height: 60px;
+    width: ${(props) => (props.width ? `${props.width}` : '320px')};
+    height: ${(props) => (props.height ? `${props.width}` : '60px')};
     color: ${(props) => (props.outlined ? '#61c1d4' : '#ffffff')};
 
     span {

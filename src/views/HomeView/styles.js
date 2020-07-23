@@ -4,9 +4,25 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-items: center;
+    flex-direction: column;
 
     @media (max-width: 1024px) {
         flex-direction: column;
+    }
+`;
+
+export const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const Message = styled.div`
+    h3 {
+        font-family: 'Nunito Sans';
+        font-size: 25px;
+        color: #383838;
+        font-weight: normal;
+        margin: 25px 0;
     }
 `;
 

@@ -1,46 +1,39 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import {
-    Container,
-    Dropdown,
-    Icon,
-    DropdownContent,
-    Menu,
-    LogoDiv,
-} from './styles';
+import { Container, Menu, LogoDiv, Icon } from './styles';
+
 import Logo from '../../assets/logo.png';
 
+import { UserContext } from '../../config/contexts/UserContext';
+
 export default () => {
-    const [logged, setLogged] = useState(true);
+    const { logged, logoff } = useContext(UserContext);
+
+    const handleLogoff = () => {
+        logoff();
+    };
 
     return (
         <Container>
             {logged ? (
                 <Menu>
-                    {/* <Dropdown>
-                        <Icon />
-                        <DropdownContent>
-                            <li>
-                                <span>HOME</span>
-                            </li>
-                            <li>
-                                <span>TRADE</span>
-                            </li>
-                            <li>
-                                <span>REPORT INFECTED</span>
-                            </li>
-                        </DropdownContent>
-                    </Dropdown>
-
                     <li>
-                        <span>HOME</span>
+                        <Link to="/">
+                            <span>HOME</span>
+                        </Link>
                     </li>
                     <li>
-                        <span>TRADE</span>
+                        <Link to="/trade">
+                            <span>TRADE</span>
+                        </Link>
                     </li>
                     <li>
-                        <span>REPORT INFECTED</span>
-                    </li> */}
+                        <div onClick={handleLogoff}>
+                            <Icon />
+                            <span>Exit</span>
+                        </div>
+                    </li>
                 </Menu>
             ) : (
                 <div></div>

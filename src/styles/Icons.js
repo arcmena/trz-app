@@ -1,1 +1,1 @@
-export { VpnKey } from 'styled-icons/material-outlined';
+export { VpnKey, ExitToApp } from 'styled-icons/material-outlined';

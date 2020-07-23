@@ -11,3 +11,29 @@ export const Container = styled.div`
         height: 100%;
     }
 `;
+
+export const FixedButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    background: #61c1d4;
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    right: 15px;
+    bottom: 15px;
+
+    cursor: pointer;
+
+    span {
+        font-family: 'Nunito Sans';
+        font-size: 25px;
+        color: #ffffff;
+        margin: 25px 0;
+    }
+`;
