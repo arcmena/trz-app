@@ -50,23 +50,6 @@ yarn start
 
 It should start at: `http://localhost:3000`
 
-## Disclaimers
-
-Some of the features are not fully functional due to short schedule, like the rest of the component testing and reports from the api. It will be implemented later.
-
-All of the following features are complete:
-
--   Login
--   Registration / Sign Up
--   Last location and set new Location
--   Report infected survivor
--   Trading
-
-What's not complete yet:
-
--   Api Reports
--   See amount of items in inventory
-
 <div align="center">
 <h3>Thanks for trying my app 😀!</h3>
 </div>
